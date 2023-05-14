@@ -1,0 +1,17 @@
+body {
+    background-color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif
+    ;
+}
+header {
+    background-color: #00ffff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+main {
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}

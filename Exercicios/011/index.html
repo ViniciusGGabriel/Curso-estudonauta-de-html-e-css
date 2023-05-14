@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{background-color: rgb(69, 69, 69);}
+        body{-webkit-text-fill-color: aliceblue;}
+    </style>
+    <title>Tamanhos de imagem</title>
+</head>
+<body>
+    <h1>Imagem pequena</h1>
+      <p>Abrir o site em varios dispositivos</p>
+
+    <picture>
+        <source media="(min-width: 1050px)" srcset="img/fotos-g.png" type="image/png" >
+        <source media="(min-width: 750px)" srcset="img/fotos-m.png" type="image/png">
+        <img src="img/fotos-p.png" alt="imagem menor">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+      <p>Colocando um audio no HTML5</p>
+    <audio preload="auto" autoplay 
+        src="midia/god rest ye merry gentlmen - dj williams.mp3"controls autoplay></audio>
+        <audio>
+        <source src="midia/god rest ye merry gentlmen - dj williams.mp3" type="audio/mpeg"> <!--mp3=mpeg-->
+    </audio>
+</body>
+</html>

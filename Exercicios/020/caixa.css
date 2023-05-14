@@ -1,0 +1,9 @@
+h1 {
+    background-color: darkcyan;
+    height: 40px;
+    width: 215px;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}

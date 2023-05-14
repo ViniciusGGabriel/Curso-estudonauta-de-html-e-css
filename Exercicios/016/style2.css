@@ -1,0 +1,10 @@
+body {
+    background-image: linear-gradient(to right, rgb(211, 177, 27), rgb(224, 26, 191), rgb(43, 43, 238));
+}
+h1 {
+    text-align: center;
+    background-color: rgb(92, 67, 67);
+    border-radius: 50px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

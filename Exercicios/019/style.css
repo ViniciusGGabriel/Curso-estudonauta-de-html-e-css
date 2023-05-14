@@ -1,0 +1,37 @@
+/* # = id
+. = class
+: = pseudo-class
+:: = pseudo-elements
+> = children --> */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkslategray;
+    color: aliceblue;
+}
+
+a {
+   text-decoration: none;
+   font-weight: bold;
+   background: white;
+   border-radius: 10px;
+   padding: 5px;
+   width: 500px;
+   margin: auto;
+   box-shadow: 5px 5px 10px rgb(69, 67, 67);
+   color: rgb(170, 0, 255);
+}
+a:visited {
+    color: rgb(139, 0, 42);
+}
+a:hover {
+    color: yellow;
+}
+a:active {
+    color: blueviolet;
+}
+a::after {
+
+    content: '[link]';
+    text-decoration: none;
+    color: aqua;
+}
