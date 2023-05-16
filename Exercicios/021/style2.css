@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+    
+/*     background-image: url(imagens/wallpaper002.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed; */
+
+    background: black url(imagens/wallpaper002.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+/* Shorthand - background 
+    color > image > position > repeat > [size] > attachment o size n funfa 
+ */
+
+main {
+    background-color: aliceblue;
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #255;
+    border-radius: 10px;
+}
