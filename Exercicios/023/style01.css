@@ -1,14 +1,33 @@
 table {
     width: 400px;
     border-collapse: collapse;
+    position: relative; /* Rolagem  */
 }
 
-thead, tfoot {
-    background-color: gray;
+caption {
+    padding-top: 12px;
+    background-color: black;
     color: white;
 }
 
+thead, tfoot {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0); /* Rolagem */
+}
+
 td, th {
-    border: 1px solid #255;
+    border: 1px solid rgb(0, 0, 0);
     padding: 10PX;
 }
+
+tbody > tr:nth-child(2n) {
+    background-color: gray;
+}
+
+/* :nth-child(odd) ou (even) serve para mudar a cor da tabela com os números impares e par  */
