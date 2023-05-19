@@ -8,31 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td rowspan="2">1</td>
-            <td>2</td>
-            <td>3</td>
-            <td colspan="3">4</td>
-        </tr>
-        <tr>
-            <td rowspan="2" colspan="2">5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td colspan="2">12</td>
-        </tr>
-        <tr>
-            <td colspan="2">13</td>
-            <td>14</td>
-            <td>15</td>
-            <td colspan="2">16</td>
-        </tr>
-    </table>
+    <div id="container"> 
+<!-- Para deixar tabela responsiva é só colocar em uma div e o resto é em css -->
+
+        <table>
+            <colgroup>
+                <!-- Tag q meio q dá class para as colunas -->
+                <col class="cnome">
+                <!-- Seria um exemplo -->
+                <!-- ele vai pegar o os nomes da tabela -->
+            </colgroup>
+            <tr>
+                <th scope="col">
+                    nome
+                </th>
+                <!-- TEM Q SER BA TAG th -->
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td colspan="3">4</td>
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="2">5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td colspan="2">12</td>
+            </tr>
+            <tr>
+                <td colspan="2">13</td>
+                <td>14</td>
+                <td>15</td>
+                <td colspan="2">16</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

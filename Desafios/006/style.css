@@ -1,3 +1,7 @@
+#container {
+    overflow-x: auto; /* Isso fara só a tableo rolar */
+}
+
 table {
     width: 400px;
     border-collapse: collapse;
