@@ -1,0 +1,14 @@
+table {
+    width: 400px;
+    border-collapse: collapse;
+}
+
+thead, tfoot {
+    background-color: gray;
+    color: white;
+}
+
+td, th {
+    border: 1px solid #255;
+    padding: 10PX;
+}
