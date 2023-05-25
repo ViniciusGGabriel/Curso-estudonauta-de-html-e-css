@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style01.css">
+    <title>Formulário 05</title>
+</head>
+<body>
+ <h1>5° formulário</h1>
+ <form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="isex" id="imasc"> <label for="imasc">Masculino</label> <br>
+        <input type="radio" name="isex" id="ifem"> <label for="ifem">Feminino</label>
+    </fieldset>
+    <fieldset>
+        <legend>Formulário</legend>
+        <p>
+            <input type="checkbox" name="iefut" id="iefut"><label for="iefut">Futebol</label> <br>
+            <input type="checkbox" name="iebasq" id="iebasq"><label for="iebasq">Basquete</label>  <br>
+            <input type="checkbox" name="ieport" id="ieport"><label for="ieport">E-sports</label> <br>
+            <input type="checkbox" name="iegolf" id="iegolf"><label for="iegolf">Golf</label> <br>
+            <input type="checkbox" name="iecorr" id="iecorr"><label for="iecorr">Corrida</label> <br>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        </fieldset>
+    </form>
+</body>
+</html>
