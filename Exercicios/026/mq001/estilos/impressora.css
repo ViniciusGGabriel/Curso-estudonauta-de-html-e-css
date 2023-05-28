@@ -1,0 +1,25 @@
+/* Estilo de impressão */
+
+* {
+    margin: 10px;
+    padding: 10px   ;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article {
+    width: 100%;
+}
+
+/* Esse código abaixo fica escrito normalmente */
+article::after {
+    content: 'esse artigo foi impresso através dos estudos de HTML e CSS do estudonauta ';
+}
