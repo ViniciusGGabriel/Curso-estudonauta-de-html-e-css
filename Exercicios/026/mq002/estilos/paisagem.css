@@ -1,0 +1,6 @@
+/* <!-- Telas em modo deitado --> */
+
+body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
