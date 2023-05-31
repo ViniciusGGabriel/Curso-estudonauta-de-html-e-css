@@ -1,6 +1,80 @@
 @charset "UTF-8";
 /*Todas as mídias*/
 
-@media print {
+/* Typical device breakpoints
+------------------------------
+Pequenas telas: 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Pc: 992px até 1200px
+Grandes telas: 1200px  Com testes 1500px fica melhor    
+------------------------------
+Ainda funciona mas ficar sempre de olho, pois pode mudar
+ */
 
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg); /* Não funciona*/
+    }
+
+    main {
+           border: 2px solid black; 
+    }
+
+    main::after {
+        content: 'Feito na aula';
+        text-decoration: overline;
+    }
+    main::before {
+        content: 'Testando tag';
+        text-decoration: underline;
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    #pc {display: none;}
+    #phone {display: none;}
+    #tv {display: none;}
+    #print {display: block;}
+    #tablet {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    
+    #pc {display: none;}
+    #phone {display: none;}
+    #tv {display: none;}
+    #print {display: none;}
+    #tablet {display: block;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* Pc */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+    #pc {display: block;}
+    #phone {display: none;}
+    #tv {display: none;}
+    #print {display: none;}
+    #tablet {display: none;}
+}
+
+@media screen and (min-width: 1200px) { /* Grandes telas */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+        
+    #pc {display: none;}
+    #phone {display: none;}
+    #tv {display: block;}
+    #print {display: none;}
+    #tablet {display: none;}
 }
